@@ -17,11 +17,14 @@
 
 .footer__section3{
     text-align: left;
-    &>h2,h5{
+    &>h5{
+        color: white;
+    }
+    &>div>h2{
         color: white;
     }
 
-    &>.footer__icon{
+    &>div>.footer__icon{
         cursor: pointer;
         font-size: 3rem;
         &>a{
@@ -33,7 +36,7 @@
         }
     }
 
-    &>.footer__link{
+    &>div>.footer__button{
         text-decoration: none;
         cursor: pointer;
         margin-top: 20px;
@@ -60,7 +63,7 @@
         }
     }
 
-    &>.footer__link:hover{
+    &>div>.footer__button:hover{
         background-color:  rgba($color:#afafafde, $alpha: 1);
         &>i{
             color: white;
@@ -96,15 +99,39 @@
     }
 
     .footer__section3{
+        width: 100%;
+
         padding-left: 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &>div>.footer__button{
+            margin: 0;
+        }
     }
 
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
 
-    .footer__logo{
-        width: 220px;
-        height: 140px;
+    .footer__section3{
+        padding-left: 5%;
+        &>div>h2{
+            font-size: 1rem;
+        }
+        &>div>.footer__icon{
+            font-size: 2rem;
+        }
+
+        &>div>.footer__button{
+            width: 180px;
+            height: 45px;
+            &>i{
+                font-size: 1.5rem;
+            }
+            &>h5{
+                font-size: 0.8rem;
+            }
+        }
     }
-
 }

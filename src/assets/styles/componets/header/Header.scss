@@ -1,0 +1,53 @@
+.nav_color{
+    background-color:#182B55;
+}
+
+.nav{
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
+.nav>i{
+    color: black;
+    background-color: #00B2F2 ;
+    padding: 6px;
+    border-radius: 50%;
+    border: 6px solid rgb(120, 120, 120);
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+.nav:hover{
+    color: white;
+    &.i{
+        background-color: red;
+    }
+}
+
+.image{
+    width: 220px;
+    height: 60px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .nav{
+        height: auto;
+    }
+
+    .nav__icon{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .image{
+        width: 180px;
+        height: 50px;
+    }
+
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-// import Header from './Header';
+import Header from './header/Header';
 // import Footer from './Footer';
 import PropTypes from 'prop-types';
 
@@ -8,6 +8,7 @@ const Layout = (props) => {
   return (
     <>
       <div className='App'>
+       <Header />
         {children}
         {/* <Footer /> */}
       </div>

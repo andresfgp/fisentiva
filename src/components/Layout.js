@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './header/Header';
-// import Footer from './Footer';
+import Footer from './footer/Footer';
 import PropTypes from 'prop-types';
 
 const Layout = (props) => {
@@ -8,9 +8,9 @@ const Layout = (props) => {
   return (
     <>
       <div className='App'>
-       <Header />
+        <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </>
   );

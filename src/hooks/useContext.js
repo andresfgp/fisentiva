@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import useLocalStorage from './useLocalStorage'
+// import useLocalStorage from './useLocalStorage'
 
 const UseContext = React.createContext();
 
@@ -25,22 +25,9 @@ function UseProvider(props) {
 
   const [openModal, setOpenModal] = useState(false); // state Modal and function to set
 
-  const [formNewSale, setFormNewSale] = useState({ id: generateUUID() });
-  const [sales, saveSales] = useLocalStorage('SALES_V1', []); //nuevo Hook para localStorageItem
-  const [updateSale, setUpdateSale] = useState({});
-
-  const [formNewProduct, setFormNewProduct] = useState({ id: generateUUID() });
-  const [products, saveProducts] = useLocalStorage('PRODUCTS_V1', []); //nuevo Hook para localStorageItem
-  const [updateProduct, setUpdateProduct] = useState({});
+  const [formContact, setFormContact] = useState();
+  // const [contact, saveContact] = useLocalStorage('CONTACT_V1', []); //nuevo Hook para localStorageItem
   
-  const [searchValue, setSearchValue] = useState(''); //props input for Search
-
-  let searchedSale = [];
-  !searchValue.length > 0 ? searchedSale = sales : searchedSale = sales.filter(item => item.description.toLowerCase().includes(searchValue.toLowerCase())); //filter Search text
-
-  let searchedProduct = [];
-  !searchValue.length > 0 ? searchedProduct = products : searchedProduct = products.filter(item => item.description.toLowerCase().includes(searchValue.toLowerCase())); //filter Search text
-
   const addItem = (form,array,save) => { 
     const newItem = [...array]; 
     newItem.push(form);
@@ -57,40 +44,16 @@ function UseProvider(props) {
     save(newItem)
   }
 
-  const initSaleEdit = (id) => {
-    setUpdateSale(searchedSale.filter((item) => ((item.id === id)))[0]);
-  }
-
-  const initProductEdit = (id) => {
-    setUpdateProduct(searchedProduct.filter((item) => ((item.id === id)))[0]);
-  }
-
   return (
     <UseContext.Provider value={{
-      searchValue,  //COMPONENT -> Search.jsx
-      openModal,  //CONTAINER -> NewSale.jsx, NewProduct.jsx
-      formNewSale,  //CONTAINER -> NewSale.jsx
-      updateSale, //CONTAINER -> UpdateSale.jsx
-      searchedSale, //CONTAINER -> Sales.jsx
-      sales, //CONTAINER -> Sales.jsx, NewSale.jsx, UpdateSale.jsx  
-      saveSales, //CONTAINER -> Sales.jsx, NewSale.jsx, UpdateSale.jsx 
-      formNewProduct,  //CONTAINER -> NewProduct.jsx
-      searchedProduct, //CONTAINER -> Products.jsx
-      updateProduct, //CONTAINER -> UpdateProduct.jsx
-      products, //CONTAINER -> Products.jsx, NewProduct.jsx, UpdateProduct.jsx  
-      saveProducts, //CONTAINER -> Products.jsx, NewProduct.jsx, UpdateProduct.jsx 
-      setSearchValue, //CONTAINER -> Search.jsx
-      setOpenModal, //CONTAINER -> NewSale.jsx, NewProduct.jsx
-      addItem, //CONTAINER -> NewSale.jsx, NewProduct.jsx
-      deleteItem, //CONTAINER -> Sales.jsx, Products.jsx
-      updateItem, //CONTAINER -> UpdateSale.jsx, UpdateProduct.jsx     
-      generateUUID, //CONTAINER -> NewSale.jsx
-      setFormNewSale,  //CONTAINER -> NewSale.jsx
-      setUpdateSale, //CONTAINER -> UpdateSale.jsx
-      initSaleEdit, //CONTAINER -> Sales.jsx
-      setFormNewProduct,  //CONTAINER -> NewProduct.jsx
-      setUpdateProduct, //CONTAINER -> UpdateProduct.jsx
-      initProductEdit, //CONTAINER ->  Products.jsx
+      openModal,  //NONE
+      formContact,  //COMPONENT -> Contact.jsx
+      setOpenModal, //NONE
+      addItem, //NONE
+      deleteItem, //NONE
+      updateItem, //NONE   
+      generateUUID, //NONE
+      setFormContact,  //COMPONENT -> Contact.jsx
     }}>
       {children}
     </UseContext.Provider>

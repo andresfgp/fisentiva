@@ -4,7 +4,6 @@ import Layout from '../components/Layout';
 import '../assets/styles/routes/App.scss';
 import Home from '../containers/home/Home';
 
-
 const App = (props) => {
   return (
     <BrowserRouter>

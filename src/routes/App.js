@@ -9,7 +9,7 @@ const App = (props) => {
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route exact path='/home' element={<Home />}/>
+          <Route exact path='/' element={<Home />}/>
         </Routes>
       </Layout>
     </BrowserRouter>

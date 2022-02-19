@@ -1,0 +1,9 @@
+@import "../../../routes/Vars.scss";
+
+.hero__container-time{
+    &>p{
+        color: white;
+        margin: 1px;
+        font-size: smaller;
+    }
+}

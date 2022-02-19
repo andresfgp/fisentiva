@@ -1,0 +1,59 @@
+@import "../../routes/Vars.scss";
+
+.header{
+    background-color:$primary-color;
+}
+
+.header__link{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    &>i{
+        color: $primary-color;
+        background-color: $secondary-color ;
+        padding: 6px;
+        border-radius: 50%;
+        border: 6px solid rgb(120, 120, 120);
+        margin-right: 10px;
+        font-size: 1.5rem;
+    }
+    
+}
+
+.header__link:hover{
+    &>i{
+        color: white;
+        background-color:$primary-color;
+    }
+}
+
+
+.header__link:hover{
+    color: white;
+}
+
+.header__logo{
+    width: 220px;
+    height: 60px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .header__link{
+        height: auto;
+    }
+
+    .header__icon{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .header__logo{
+        width: 180px;
+        height: 50px;
+    }
+
+}

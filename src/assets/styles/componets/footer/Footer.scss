@@ -1,0 +1,138 @@
+@import "../../routes/Vars.scss";
+
+.footer{
+    background-color:$primary-color;
+    padding-bottom: 20px;
+}
+
+.footer__logo{
+    width: 280px;
+    height: 160px;
+}
+
+.footer__text{
+    padding-left: 10%;
+    padding-right: 10%;
+    color: white;
+}
+
+
+.footer__section3{
+    text-align: left;
+    &>h5{
+        color: white;
+    }
+    &>div>h2{
+        color: white;
+    }
+
+    &>div>.footer__icon{
+        cursor: pointer;
+        font-size: 3rem;
+        &>a{
+            text-decoration: none;
+            color: $secondary-color;
+        }
+        &>a>i:hover{
+            transform: scale(1.4,1.4);
+        }
+    }
+
+    &>div>.footer__button{
+        text-decoration: none;
+        cursor: pointer;
+        margin-top: 20px;
+        background-color:  rgba($color:#afb5c3, $alpha: 1);
+        border-radius: 30px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        width: 280px;
+        height: 60px;
+        &>i{
+            margin-left: 10px;
+            color: $primary-color;
+            background-color: $secondary-color ;
+            padding: 4px;
+            border-radius: 50%;
+            border: 4px solid rgb(214, 214, 214);
+            margin-right: 10px;
+            font-size: 2rem;
+        }
+        &>h5{
+            margin: 0;
+            color: $primary-color;
+        }
+    }
+
+    &>div>.footer__button:hover{
+        background-color:  rgba($color:#afafafde, $alpha: 1);
+        &>i{
+            color: white;
+            background-color:$primary-color;
+        }
+    }
+}
+
+.list-unstyled{
+    &>li{
+        font-size: larger;
+        text-align: left;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20%;
+        &>a{
+            color: #FFFFFF8C;
+            text-decoration: none;
+        }
+        &>a:hover{
+            color: white;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .footer__section1,
+    .footer__section2,
+    .footer__section3>h5{
+        display: none;
+    }
+
+    .footer__section3{
+        width: 100%;
+
+        padding-left: 10%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        &>div>.footer__button{
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer__section3{
+        padding-left: 5%;
+        &>div>h2{
+            font-size: 1rem;
+        }
+        &>div>.footer__icon{
+            font-size: 2rem;
+        }
+
+        &>div>.footer__button{
+            width: 180px;
+            height: 45px;
+            &>i{
+                font-size: 1.5rem;
+            }
+            &>h5{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

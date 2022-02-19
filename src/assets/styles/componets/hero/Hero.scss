@@ -1,0 +1,121 @@
+@import "../../routes/Vars.scss";
+
+.hero{
+    background-image: url("../../../static/hero.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
+    display: block;
+    background-size: 100% auto;
+    height: auto;
+    padding: 8% 0px 40px 16% ;
+    &>h1{
+        color: $primary-color;
+    }
+    &>h5{
+        width: 600px;
+        color: $primary-color;
+    }
+    &>h6{
+        display: none;
+    }
+
+    .hero-button{
+        padding: 20px 0 50px 0;
+        &>button{
+            color: $primary-color;
+            background-color: $secondary-color;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: large;
+        }
+    }
+
+    .hero__container{
+        display: flex;
+        flex-direction: row;
+        .hero__container-time{
+            width: 260px;
+            height: 180px;
+            border-radius: 10px;
+            background-color: $primary-color;
+            padding: 20px;
+            margin-right: 20px ;
+            &>img{
+                width: 30px;
+                margin-bottom: 10px;
+            }
+            &>h5{
+                font-weight: bold;
+                color: $secondary-color;
+            }
+            &>h6{
+                display: none;
+            }
+    
+            .hero__container-timeText{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                border-bottom: 1px solid white;
+                &>p{
+                    color: white;
+                    margin: 1px;
+                    font-size: smaller;
+                }
+            }
+        }
+    }
+
+
+    .hero__container-time:hover{
+        transform: scale(1.1,1.1);
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .hero{
+        background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,1)), url("../../../static/hero.png");
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: auto 40%;
+        padding: 5% 0;
+        text-align: center;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &>h1{
+            font-size:larger;
+        }
+        &>h5{
+            display: none;
+        }
+        &>h6{
+            width: 400px;
+            font-size: medium;
+            display:block;
+        }
+
+        .hero__container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .hero__container-time{
+                margin-bottom: 20px;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .hero{
+        &>h6{
+            width: 90%;
+            font-size: small;
+        }
+    }
+}

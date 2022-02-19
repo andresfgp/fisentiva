@@ -1,0 +1,115 @@
+@import "../../routes/Vars.scss";
+
+.contact{
+    padding: 40px 20% 40px 20%;
+    background:linear-gradient(180deg, #b3b3b3 0%, #ffffff 10%);
+    text-align: center;
+
+    .contact__title{
+        &>h2{
+            letter-spacing: 8px;
+            font-weight: bold;
+            color:$primary-color
+        }
+        &>h5{
+            margin: 0;
+            color:$primary-color
+        }
+    }
+
+    .contact__footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0 10% 0 10%;
+        align-items: center;
+        &>div>h6{
+            padding-left: 10px;
+            text-align: justify;
+            margin: 0;
+            color:#b3b3b3;
+        }
+        .warning__icon{
+            columns: #b3b3b3;
+            margin-right: 5px;
+        }
+    }
+
+    .contact__form-input{
+        &>div{
+            padding-top: 20px;
+            text-align: left;
+        }
+        &>div>label{
+            color:$primary-color;
+            font-weight: bold;
+            padding: 5px;
+        }
+        &>div>input{
+            background-color: #e6e6e6;
+            outline: none;
+            border-radius: 30px;
+            border: none;
+            box-shadow: none;
+            outline: none;
+        }
+        &>div>textarea{
+            background-color: #e6e6e6;
+            outline: none;
+            border-radius: 20px;
+            resize:none;           
+            box-shadow: none;
+            outline: none;
+        }
+    }
+
+    .contact__form-button{
+        padding: 20px 0 20px 0;
+        text-align: right;
+        &>button{
+            color: $primary-color;
+            background-color: $secondary-color;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+    }
+
+    .is-required:after {
+        content: '*';
+        margin-left: 3px;
+        color: red;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact{
+        padding: 40px 5% 40px 5%;
+    }
+
+    .contact__title{
+        &>h2{
+            font-size:larger;
+        }
+        &>h5{
+            font-size:small;
+        }
+    }
+
+    .contact__footer{
+        padding: 0 !important;
+
+        &>div>h6{
+            font-size:x-small;
+        }
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .contact__title{
+        &>h5{
+            font-size:x-small;
+        }
+    }
+
+}

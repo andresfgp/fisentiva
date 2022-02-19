@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="row">
                 <div className="col-md-4 mt-md-0 mt-3 footer__section1">
                     <img className='footer__logo' src={logoFooter} alt="" />
-                    <h5 className='footer__text'>Somos una empresa prestadora de servicio de salud enfocada en la terapia física</h5>
+                    <h5 className='footer__text'>Somos una empresa prestadora  <br/> de servicio de salud enfocada  <br/> en la terapia física</h5>
                 </div>
 
                 <hr className="clearfix w-100 d-md-none pb-0"/>

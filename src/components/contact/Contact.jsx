@@ -29,7 +29,7 @@ const Contact = (props) => {
             <div className="row">
                 <div className="col contact__title">
                   <h2>CONTÁCTENOS</h2>
-                  <h5>Comunícate con nosotros y nos pondremos en contacto contigo tan pronto como nos sea posible.</h5>
+                  <h5>Comunícate con nosotros y nos pondremos en contacto <br/> contigo tan pronto como nos sea posible.</h5>
                 </div>
             </div>
             <form onSubmit={handleSubmit} className="contact__form">
@@ -112,7 +112,7 @@ const Contact = (props) => {
                   <Warning className='warning__icon'/>
                 </div>
                 <div>
-                  <h6>Para peticiones, quejas, reclamos o sugerencias, escriba en el asunto: <strong>PQRS.</strong> Esta será tramitada en la mayor brevedad.</h6>
+                  <h6>Para peticiones, quejas, reclamos o sugerencias, escriba en <br/> el asunto: <strong>PQRS.</strong> Esta será tramitada en la mayor brevedad.</h6>
                 </div>
             </div>
     </div>

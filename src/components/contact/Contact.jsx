@@ -5,6 +5,9 @@ import { ReactComponent as Warning } from '../../assets/static/warning.svg';
 
 const Contact = (props) => {
 
+  const url = 'https://api.whatsapp.com/';
+  const telefono = '+573053493546';
+
   const {formContact,setFormContact} = useContext(UseContext);
 
   const handleInput = (e) => { //recopilar informacion de formulario
@@ -18,7 +21,24 @@ const Contact = (props) => {
   const handleSubmit = (e) => { // enviar informacion formulario
     e.preventDefault();
     try {
-      setFormContact();
+      setTimeout(() => {
+        let firstname = formContact.firstname
+        let lastname = formContact.lastname
+        let email = formContact.email
+        let phone = formContact.phone
+        let title = formContact.title
+        let message = formContact.message
+        let mensaje = 'send?phone=' + telefono +
+         '&text=Fisentiva 👩🏻‍⚕️👨🏻‍⚕️🇨🇴 ' + 
+          '%0A  ➙ Nombre: ' + firstname +
+          '%0A  ➙ Apellidos: ' + lastname + 
+          '%0A  ➙ Numero de teléfono: ' + phone + 
+          '%0A  ➙ Correo electrónico: ' + email + 
+          '%0A  ➙ Asunto: ' + title +
+          '%0A  ➙ Mensaje: ' + message + ''
+        window.open(url + mensaje, '_blank')
+    }, 3000);
+      console.log(formContact);
     } catch (error) {
       console.log('error', error);
     }
@@ -61,7 +81,6 @@ const Contact = (props) => {
                         onChange={handleInput}
                         name="phone"
                         type="tel"
-                        pattern="[0-9]{7}"
                         className = "form-control"
                         required />
                   </div>

@@ -38,7 +38,6 @@ const Contact = (props) => {
           '%0A  ➙ Mensaje: ' + message + ''
         window.open(url + mensaje, '_blank')
     }, 3000);
-      console.log(formContact);
     } catch (error) {
       console.log('error', error);
     }

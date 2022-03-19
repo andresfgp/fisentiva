@@ -1,8 +1,8 @@
 import React from 'react';
 import '../../assets/styles/componets/hero/Hero.scss';
-import clock from '../../assets/static/clock.png'
-import calendar from '../../assets/static/calendar.png'
-import appointment from '../../assets/static/appointment.png'
+import clock from '../../assets/static/hero/clock.png'
+import calendar from '../../assets/static/hero/calendar.png'
+import appointment from '../../assets/static/hero/appointment.png'
 import Time from '../hero/component/Time'
 
 const Hero = () => {

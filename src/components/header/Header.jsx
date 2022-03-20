@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
-import '../../assets/styles/componets/header/Header.scss';
+import '../../assets/styles/components/header/Header.scss';
 import logoHeader from '../../assets/static/header/logoHeader.png';
 import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'

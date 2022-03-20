@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/styles/componets/hero/Hero.scss';
+import '../../assets/styles/components/hero/Hero.scss';
 import clock from '../../assets/static/hero/clock.png'
 import calendar from '../../assets/static/hero/calendar.png'
 import appointment from '../../assets/static/hero/appointment.png'
@@ -12,10 +12,10 @@ const Hero = () => {
       <h5>Somos una empresa prestadora de servicio de salud enfocada en la terapia física y nuestra principal característica es la calidad humana y ética profesional. Cuenta con profesionales calificados para el acompañamiento y progreso en salud.</h5>
       <h6>Somos una empresa prestadora de servicio de salud enfocada en la terapia física y nuestra principal característica es la calidad humana y ética profesional.</h6>
       <div className='hero-button'>
-        <button 
-          type="button"
+        <a 
+          href="#services"
           className='btn'> Más Información
-        </button>
+        </a>
       </div>
 
       <div className='hero__container'>

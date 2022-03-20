@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 // import useLocalStorage from './useLocalStorage'
+import services from '../components/services/servicesData'
 
 const UseContext = React.createContext();
 
@@ -27,7 +28,7 @@ function UseProvider(props) {
 
   const [formContact, setFormContact] = useState();
   // const [contact, saveContact] = useLocalStorage('CONTACT_V1', []); //nuevo Hook para localStorageItem
-  
+
   const addItem = (form,array,save) => { 
     const newItem = [...array]; 
     newItem.push(form);
@@ -46,6 +47,7 @@ function UseProvider(props) {
 
   return (
     <UseContext.Provider value={{
+      services, // COMPONENT -> Services.jsx
       openModal,  //NONE
       formContact,  //COMPONENT -> Contact.jsx
       setOpenModal, //NONE

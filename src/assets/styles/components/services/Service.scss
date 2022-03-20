@@ -1,0 +1,32 @@
+@import "../../routes/Vars.scss";
+
+.service{
+    margin: 0;
+    text-align: center;
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    &>img{
+        width: 100px;
+    }
+    &>h5{
+        letter-spacing: 4px;
+        font-weight: bold;
+        color: $secondary-color;
+        margin-top: 5px;
+    }
+    &>p{
+        font-weight: lighter;
+        color:$primary-color;;
+        margin: 1px;
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+
+}
+
+@media only screen and (max-width: 400px) {
+
+}

@@ -7,7 +7,7 @@
 
     .contact__title{
         &>h2{
-            letter-spacing: 8px;
+            letter-spacing: 5px;
             font-weight: bold;
             color:$primary-color
         }
@@ -88,9 +88,6 @@
     }
 
     .contact__title{
-        &>h2{
-            font-size:larger;
-        }
         &>h5{
             font-size: 0.7rem;
         }

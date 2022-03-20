@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 // import useLocalStorage from './useLocalStorage'
 import services from '../components/services/servicesData'
+import teamwork from '../components/teamwork/teamworkData'
 
 const UseContext = React.createContext();
 
@@ -47,7 +48,8 @@ function UseProvider(props) {
 
   return (
     <UseContext.Provider value={{
-      services, // COMPONENT -> Services.jsx
+      services, // CONTAINER -> Home.jsx
+      teamwork, // CONTAINER -> Home.jsx
       openModal,  //NONE
       formContact,  //COMPONENT -> Contact.jsx
       setOpenModal, //NONE

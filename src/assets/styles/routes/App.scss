@@ -22,3 +22,9 @@ label{
 * {
   box-sizing: border-box;
 }
+
+@media only screen and (max-width: 1000px) {
+h2{
+  font-size:larger;
+  }
+}

@@ -13,11 +13,20 @@
     justify-content: center;
     text-align: center;
 }
+.isTeamwork{
+    background-color: rgba(240,240,240,255);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
 .categories__title {
     width: 100%;
     text-align: center;
     color:$primary-color;
+    font-weight: bold;
+    letter-spacing: 5px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -25,6 +34,8 @@
         padding: 20px 10%;
     }
 }
-@media only screen and (max-width: 400px) {
-
+@media only screen and (max-width: 700px) {
+    .isTeamwork{
+        display: none;
+    }
 }

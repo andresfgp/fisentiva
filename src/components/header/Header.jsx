@@ -29,7 +29,7 @@ const Header = () => {
                     Servicios
                   </div>
                 </Nav.Link>
-                <Nav.Link href="#teamWork">
+                <Nav.Link href="#teamwork">
                   <div className="header__link">
                     Equipo de trabajo
                   </div>

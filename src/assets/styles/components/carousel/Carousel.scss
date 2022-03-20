@@ -1,0 +1,19 @@
+@import "../../routes/Vars.scss";
+
+.carousel{
+    padding: 20px 0;
+    background-color: rgba(240,240,240,255);
+    .carousel__title {
+        text-align: center;
+        color:$primary-color;
+        font-weight: bold;
+        letter-spacing: 5px;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .carousel{
+        display: none !important;
+    }
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../assets/styles/componets/hero/component/Time.scss';
+import '../../../assets/styles/components/hero/component/Time.scss';
 
 const Time = (props) => {
     const {img,title,text}=props;

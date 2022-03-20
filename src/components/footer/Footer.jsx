@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../assets/styles/componets/footer/Footer.scss';
-import logoFooter from '../../assets/static/logoFooter.png';
+import '../../assets/styles/components/footer/Footer.scss';
+import logoFooter from '../../assets/static/footer/logoFooter.png';
 
 
 

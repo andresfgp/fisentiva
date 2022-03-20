@@ -1,7 +1,7 @@
 import React, {useContext}  from 'react';
-import '../../assets/styles/componets/contact/Contact.scss';
+import '../../assets/styles/components/contact/Contact.scss';
 import {UseContext} from '../../hooks/useContext'
-import { ReactComponent as Warning } from '../../assets/static/warning.svg';
+import { ReactComponent as Warning } from '../../assets/static/contact/warning.svg';
 
 const Contact = (props) => {
 

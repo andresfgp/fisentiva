@@ -1,0 +1,32 @@
+@import "../../routes/Vars.scss";
+
+.categories{
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    padding: 20px 0;
+}
+.isService{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.categories__title {
+    width: 100%;
+    text-align: center;
+    color:$primary-color;
+}
+
+@media only screen and (min-width: 1200px) {
+    .isService{
+        padding: 20px 10%;
+    }
+}
+@media only screen and (max-width: 400px) {
+
+}

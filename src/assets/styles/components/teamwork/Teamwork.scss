@@ -11,12 +11,21 @@
         background-color: white;
         padding: 20px;
         border-radius: 15px;
-        .teamwork__photo{
-            width: 250px;
+        .teamwork__image{
             height: 340px;
-            background: rgba($color: #000000, $alpha: 0.1);
-            padding: 25px 0 0 0;
-            border-radius: 15px;
+            .teamwork__photo{
+                width: 250px;
+                height: 340px;
+                background: rgba($color: #000000, $alpha: 0.1);
+                padding: 25px 0 0 0;
+                border-radius: 15px;
+            }
+            .teamwork__logo{
+                width: 50px;
+                position: relative;
+                top: -70px;
+                right: -90px;
+            }
         }
         &>h4{
             padding-top: 20px;
@@ -42,9 +51,17 @@
     .teamwork{
         .teamwork__container{
             width: 250px;
-            .teamwork__photo{
-                width: 200px;
+            .teamwork__image{
                 height: 290px;
+                .teamwork__photo{
+                    width: 200px;
+                    height: 290px;
+                }
+                .teamwork__logo{
+                    width: 40px;
+                    top: -55px;
+                    right: -75px;
+                }
             }
             &>h4{
                 font-size:medium;           

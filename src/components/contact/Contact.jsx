@@ -75,7 +75,7 @@ const Contact = (props) => {
 
                 <div className="row contact__form-input">
                   <div className="col-md-6">
-                    <label className='is-required'>Numero de teléfono</label>
+                    <label className='is-required'>Número de teléfono</label>
                     <input
                         onChange={handleInput}
                         name="phone"
@@ -84,7 +84,7 @@ const Contact = (props) => {
                         required />
                   </div>
                   <div className="col-md-6">
-                    <label className='is-required'>Correo electronico</label>
+                    <label className='is-required'>Correo electrónico</label>
                     <input
                         onChange={handleInput}
                         name="email"

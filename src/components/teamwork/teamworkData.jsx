@@ -7,7 +7,7 @@ export default {
     'teamwork': [
       { 'id': 1,
         'name':'Sebastian García P.',
-        'career':'DOCTOR',
+        'career':'MEDICO GENERAL',
         'img': sgp,
         'logo': logo,
       },
